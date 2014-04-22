@@ -28,28 +28,24 @@
 </head>
 <body>
     <div class="app">
-        <h1>PhoneGap</h1>
+        <h1>
+            PhoneGap</h1>
         <div id="deviceready" class="blink">
-            <p class="event listening">Connecting to Device</p>
-            <p class="event received">Device is Ready</p>
+            <p class="event listening">
+                Connecting to Device</p>
+            <p class="event received">
+                Device is Ready</p>
+            <p>
+                <input type="text" data-role="date" /></p>
         </div>
     </div>
     <script type="text/javascript" src="phonegap.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile-1.4.2.min.js"></script>
     <script type="text/javascript">
         app.initialize();
-        alert('qwkehqkwje');
-        cordova.plugins.barcodeScanner.scan(
-  function (result) {
-      alert("We got a barcode\n" +
-            "Result: " + result.text + "\n" +
-            "Format: " + result.format + "\n" +
-            "Cancelled: " + result.cancelled);
-  },
-  function (error) {
-      alert("Scanning failed: " + error);
-  }
+
 );
-        </script>
+    </script>
 </body>
 </html>
